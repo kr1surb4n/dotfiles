@@ -1,2 +1,2 @@
 #!/bin/bash
-GIT_SSH_COMMAND="ssh -i ~/.ssh/github/id_github_kris" git push origin main
+GIT_SSH_COMMAND="ssh -i ~/.ssh/github/id_github_kris" git push originssh main
