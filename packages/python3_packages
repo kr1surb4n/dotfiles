@@ -96,3 +96,4 @@ isort
 mypy
 
 tmuxp
+yamllint
