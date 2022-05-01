@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_github_kris"
+
+# add a new line before command output
+# trap echo DEBUG
+# export PROMPT_COMMAND=echo
+
+
+
 export PATH_TO_COAT=~/.coat
 export COAT_MODULES=$PATH_TO_COAT/modules
 export COAT_STORAGE=$PATH_TO_COAT/storage
@@ -10,7 +18,7 @@ export SPOT_FILE=$PATH_TO_COAT/storage/spot
 export FOLDER_BOOKMARK_FILE=$PATH_TO_COAT/storage/bookmarks
 
 export BASH_COMPLETION_USER_DIR=$HOME/.config/bash-completion
-
+export PACZEK_FILLINGS=$PATH_TO_COAT/lib/paczki
 export PATH=$PATH:~/bin:$PATH_TO_COAT/lib
 export PATH="$PATH:$PATH_TO_COAT/lib/foxer:/usr/bin/go:~/.config/composer/vendor/laravel/installer/bin:~/.config/composer/vendor/bin"
 export PATH="$PATH:~/.local/bin"
