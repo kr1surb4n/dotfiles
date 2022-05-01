@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: comcia
+# key: comcia
+# uuid: comcia
+# --
+/* 
+ `yas-selected-text`$0
+*/
+

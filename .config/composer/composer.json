@@ -1,11 +1,22 @@
 {
-    "require": {
-        "laravel/installer": "^4.2",
-        "laravel/laravel": "^8.6"
+    "name": "kris/composer",
+    "description": "main php package",
+    "type": "no",
+    "autoload": {
+        "psr-4": {
+            "Kris\\Composer\\": "src/"
+        }
     },
     "require-dev": {
-        "laravel/sail": "^1.13",
-        "phpactor/phpactor": "*",
-        "felixfbecker/language-server": "*"
+	"laravel/framework": "^8.6",
+        "phpactor/phpactor": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    },
+    "require": {
+        "laravel/installer": "^4.2"
     }
 }

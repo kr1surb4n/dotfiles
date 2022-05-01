@@ -13,12 +13,12 @@
 ;;; Paths
 
 (add-to-list 'load-path "~/bin/lisp")
-(add-to-list 'load-path "~/bin/lisp/elpy")
+;;;(add-to-list 'load-path "~/bin/lisp/elpy")
 
 ;;; Requires
-(require 'elpy)
-(require 'sr-speedbar)
-(require 'yafolding)
+;;; (require 'elpy)
+;;; (require 'sr-speedbar)
+;;;(require 'yafolding)
 (require 'org-id)
 
 ;;; Doom Emacs settings
@@ -42,8 +42,8 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-gruvbox-reading)
-
+;; (setq doom-theme 'doom-gruvbox-reading)
+(setq doom-theme 'doom-gruvbox)
 
 ;;; Org mode
 ;;
@@ -668,49 +668,74 @@ Skip project and sub-project tasks, habits, and loose non-project tasks."
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
 
+(require 'company-lsp)
+(push 'company-lsp company-backends)
+(setq company-lsp-enable-snippet t)
+
 
 ;; insert stuff here (add-load-path! "lisp/package")
-;;(yas-global-mode 1)
+(yas-global-mode 1)
 ;;
+(add-hook 'after-init-hook 'global-company-mode)
+;;;(add-hook 'python-mode-hook 'global-company-mode)
+;;;(add-hook 'after-init-hook 'global-company-mode)
+;;;(setq company-tooltip-align-annotations t)
+;;(setq company-idle-delay 0.2
+;;      company-minimum-prefix-length 3)
 
 ;;; Python coding
 (global-flycheck-mode)
 
-(add-hook 'python-mode-hook
-          (lambda (
-            (elpy-enable)
 
-            (anaconda-mode)
-            (anaconda-eldoc-mode)
-            ;;;(importmagic-mode)
-
-            (local-set-key (kbd "C-x C-d") 'anaconda-mode-show-doc)
-            (local-set-key (kbd "C-x C-w") 'anaconda-mode-find-definitions)
-            (add-hook 'before-save-hook 'pyimport-remove-unused)
-            ;;;(add-hook 'before-save-hook 'importmagic-fix-imports)
-            (add-hook 'before-save-hook 'pyimpsort-buffer)
-            (add-hook 'before-save-hook 'blacken-buffer)
-            (set (make-local-variable 'compile-command)
-                 (concat "python3 " (buffer-name))
-            )
-          )
-            )
-          )
+(setq company-backends '(company-lsp
+			  company-capf
+                         company-keywords
+                         company-semantic
+                         company-files
+                         
+                         company-clang
+                         company-cmake
+                         company-ispell
+                         company-yasnippet))
 
 
-;;;(add-hook 'after-init-hook 'global-company-mode
-(add-hook 'python-mode-hook 'global-company-mode)
+;;(after! yasnippet
+;; (nconc company-backends '(company-yasnippet)))
+
+(message "Hello world")
+
+;; (add-hook 'python-mode-hook
+;;           (lambda (
+;;             (elpy-enable)
+
+;;             (anaconda-mode)
+;;             (anaconda-eldoc-mode)
+;;             ;;;(importmagic-mode)
+
+;;             (local-set-key (kbd "C-x C-d") 'anaconda-mode-show-doc)
+;;             (local-set-key (kbd "C-x C-w") 'anaconda-mode-find-definitions)
+;;             (add-hook 'before-save-hook 'pyimport-remove-unused)
+;;             ;;;(add-hook 'before-save-hook 'importmagic-fix-imports)
+;;             (add-hook 'before-save-hook 'pyimpsort-buffer)
+;;             (add-hook 'before-save-hook 'blacken-buffer)
+;;             (set (make-local-variable 'compile-command)
+;;                  (concat "python3 " (buffer-name))
+;;             )
+;;           )
+;;             )
+;;           )
+
 
 
 ;;; RUST CONFIG
-(eval-after-load "company" '(add-to-list 'company-backends 'company-anaconda))
+;;;(eval-after-load "company" '(add-to-list 'company-backends 'company-anaconda))
 
-(require 'rust-mode)
-(add-hook 'rust-mode-hook #'racer-mode)
-(add-hook 'racer-mode-hook #'eldoc-mode)
-(add-hook 'racer-mode-hook #'company-mode)
-(define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
-(setq company-tooltip-align-annotations t)
+;;;(require 'rust-mode)
+;;;(add-hook 'rust-mode-hook #'racer-mode)
+;;;(add-hook 'racer-mode-hook #'eldoc-mode)
+;;;(add-hook 'racer-mode-hook #'company-mode)
+;;;(define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
+
 
 
 

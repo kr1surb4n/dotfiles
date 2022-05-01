@@ -19,7 +19,7 @@
        ;;japanese
 
        :completion
-       company           ; the ultimate code completion backend
+       company                             ;the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ivy               ; a search engine for love and life
@@ -31,7 +31,7 @@
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
        ;;fill-column       ; a `fill-column' indicator
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
-       ;;hydra
+       hydra
        ;;indent-guides     ; highlighted indent columns
        minimap           ; show a map of the code on the side
        modeline          ; snazzy, Atom-inspired modeline, plus API
@@ -53,6 +53,7 @@
        (evil +everywhere); come to the dark side, we have cookies
        file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
+       ;;flycheck
        ;;(format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
@@ -65,7 +66,7 @@
 
        :emacs
        dired             ; making dired pretty [functional]
-       electric          ; smarter, keyword-based electric-indent
+       ;;electric          ; smarter, keyword-based electric-indent
        ;;ibuffer         ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
@@ -74,12 +75,12 @@
        ;;eshell            ; the elisp shell that works everywhere
        ;;shell             ; simple shell REPL for Emacs
        ;;term              ; basic terminal emulator for Emacs
-       ;;vterm             ; the best terminal emulation in Emacs
+       vterm             ; the best terminal emulation in Emacs
 
        :checkers
        syntax              ; tasing you for every semicolon you forget
-       ;;spell             ; tasing you for misspelling mispelling
-       ;;grammar           ; tasing grammar mistake every you make
+       spell             ; tasing you for misspelling mispelling
+       grammar           ; tasing grammar mistake every you make
 
        :tools
        ansible
@@ -93,7 +94,7 @@
        lookup              ; navigate your code and its documentation
        lsp
        ;;macos             ; MacOS-specific commands
-       magit             ; a git porcelain for Emacs
+       ;;magit             ; a git porcelain for Emacs
        make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
        ;;pdf               ; pdf enhancements
@@ -106,7 +107,7 @@
 
        :lang
        ;;agda              ; types of types of types of types...
-       cc                ; C/C++/Obj-C madness
+       (cc +lsp)                ; C/C++/Obj-C madness
        ;;clojure           ; java with a lisp
        common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -140,7 +141,18 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       org               ; organize your plain life in plain text
+
+	;;(org                         ; organize your plain life in plain text
+	;; +pretty                     ; yessss my pretties! (nice unicode symbols)
+	;; +dragndrop                  ; drag & drop files/images into org buffers
+	;; ;;+hugo                     ; use Emacs for hugo blogging
+	;; +noter                      ; enhanced PDF notetaking
+	;; +jupyter                    ; ipython/jupyter support for babel
+	;; +pandoc                     ; export-with-pandoc support
+	;; +gnuplot                    ; who doesn't like pretty pictures
+	;; ;;+pomodoro                 ; be fruitful with the tomato technique
+	;; +present                    ; using org-mode for presentations
+	;; +roam2)                     ; wander around notes
        perl              ; write code no one else can comprehend
        (php +lsp)               ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more

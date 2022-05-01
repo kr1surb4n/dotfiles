@@ -17,6 +17,12 @@
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
+(package! gitconfig-mode
+	  :recipe (:host github :repo "magit/git-modes"
+			 :files ("gitconfig-mode.el")))
+(package! gitignore-mode
+	  :recipe (:host github :repo "magit/git-modes"
+			 :files ("gitignore-mode.el")))
 
 (package! deft)
 (package! lsp-treemacs)
@@ -30,6 +36,14 @@
 (package! importmagic)
 (package! rust-mode)
 (package! racer)
+
+(package! cmake-ide)
+(package! company-lsp)
+
+;;(package! rtags)
+;;(package! ivy-rtags)
+
+
 ;;;(package! py-autopep8)
 
 ;; To install a package directly from a particular repo, you'll need to specify
