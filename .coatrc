@@ -14,6 +14,8 @@ export COAT_STORAGE=$PATH_TO_COAT/storage
 export COAT_PACKAGES=$PATH_TO_COAT/packages
 export COAT_LIBS=$PATH_TO_COAT/libs
 
+export TMUXP_CONFIGDIR=$PATH_TO_COAT/storage/tmux
+
 export SPOT_FILE=$PATH_TO_COAT/storage/spot
 export FOLDER_BOOKMARK_FILE=$PATH_TO_COAT/storage/bookmarks
 
