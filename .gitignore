@@ -10,6 +10,14 @@
 # any tracked files which get ignored after the change.
 #
 
+.envrc
+tasks.sh
+__snapshots__
+docker-compose.local.yml
+mysail
+.env.testing
+
+
 ### NetBeans ###
 nbproject/private/
 build/

@@ -16,7 +16,7 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
 # make symbolic links to dotfiles  -> one source of truth
-find . -maxdepth 1 -type f -name ".*" | while read dotfile; do clean_name="${dotfile/.\//}"; ln -sf $(pwd)/$clean_namea $HOME/$clean_name; done
+find . -maxdepth 1 -type f -name ".*" | while read dotfile; do clean_name="${dotfile/.\//}"; ln -sf $(pwd)/$clean_name $HOME/$clean_name; done
 
 # bash completion files
 ln -s $(pwd)/autocomplete/composer.completion.bash ~/.config/bash-completion/composer.completion.bash
