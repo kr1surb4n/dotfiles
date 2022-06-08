@@ -142,17 +142,17 @@
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
 
-	;;(org                         ; organize your plain life in plain text
-	;; +pretty                     ; yessss my pretties! (nice unicode symbols)
+	(org                         ; organize your plain life in plain text
+	 +pretty                     ; yessss my pretties! (nice unicode symbols)
 	;; +dragndrop                  ; drag & drop files/images into org buffers
 	;; ;;+hugo                     ; use Emacs for hugo blogging
 	;; +noter                      ; enhanced PDF notetaking
-	;; +jupyter                    ; ipython/jupyter support for babel
+	 +jupyter                    ; ipython/jupyter support for babel
 	;; +pandoc                     ; export-with-pandoc support
-	;; +gnuplot                    ; who doesn't like pretty pictures
-	;; ;;+pomodoro                 ; be fruitful with the tomato technique
+	 +gnuplot                    ; who doesn't like pretty pictures
+	 +pomodoro                 ; be fruitful with the tomato technique
 	;; +present                    ; using org-mode for presentations
-	;; +roam2)                     ; wander around notes
+	+roam2)                     ; wander around notes
        perl              ; write code no one else can comprehend
        (php +lsp)               ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more
@@ -163,7 +163,7 @@
        rest              ; Emacs as a REST client
        ;;rst               ; ReST in peace
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       (rust +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+       ;; (rust +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        scheme            ; a fully conniving family of lisps
        sh                ; she sells {ba,z,fi}sh shells on the C xor
