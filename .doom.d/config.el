@@ -68,13 +68,23 @@
 (setq org-agenda-files (quote ("~/docs/org")))
 (setq org-default-notes-file "~/docs/org/refile.org")
 
-
+(setq org-confirm-babel-evaluate nil)
 
 (run-at-time "00:59" 3600 'org-save-all-org-buffers)
 
+;;; Have all folder folded
+(setq org-startup-folded "overview")
 
+;;; Catch invisible edits
+(setq org-catch-invisible-edits t)
 
 (setq org-use-fast-todo-selection t)  ;; Change state with C-c C-t KEY (key as defined in org-todo-keywords)
+
+(setq org-hide-block-startup t) ;; fold every headline
+(setq org-startup-folded t) ;; this should be folding
+
+;;; log time when done
+(setq org-log-done 'time)
 
 (add-hook 'org-mode-hook
           (lambda ()
@@ -111,12 +121,21 @@
 
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
+              (sequence "IDEA" "PROJECT" "|" "DOING(d)")
+              (sequence "REPORT" "BUG" "KNOWNCAUSE" "|" "FIXED")
+
               (sequence "WAITING(w@/!)" "HOLD(h@/!)" "|" "CANCELLED(c@/!)" "PHONE" "MEETING"))))
 
 (setq org-todo-keyword-faces
       (quote (("IDEA" . (:foreground "GoldenRod" :weight bold))
               ("PROJECT" . (:foreground "cyan" :weight bold))
               ("TODO" :foreground "red" :weight bold)
+              ("BUG" :foreground "red" :weight bold)
+              ("FIXED" :foreground "forest green" :weight bold)
+              ("KNOWNCAUSE" :foreground "orange" :weight bold)
+              ("REPORT" :foreground "cyan" :weight bold)
+
+
               ("NEXT" :foreground "blue" :weight bold)
               ("DONE" :foreground "forest green" :weight bold)
               ("WAITING" :foreground "orange" :weight bold)

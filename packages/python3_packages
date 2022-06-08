@@ -43,6 +43,7 @@ epydoc
 factory-boy
 feedparser
 fetchfox
+git-filter-repo
 flake8
 Flask
 future

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: call
+# key: call
+# uuid: call
+# --
+#+call: $0
