@@ -19,6 +19,15 @@ mysail
 ### wwwhhaaatt? 
 ._* 
 
+### mine 
+
+outline.org
+
+### vscode
+
+.vscode
+*.code-workspace
+
 ### NetBeans ###
 nbproject/private/
 build/
@@ -168,3 +177,9 @@ mysail
 tags
 TAGS
 tmtags
+
+# LARAVEL
+
+ziggy.js
+telescope
+

@@ -7,3 +7,9 @@ npm install --global trash-cli
   - webpack
   - tldr
   - surge
+
+
+npm -g install js-beautify
+npm install --save-dev --save-exact prettier
+npm install --save-dev javascript-obfuscator
+npm install -g jshint
