@@ -799,3 +799,11 @@ Skip project and sub-project tasks, habits, and loose non-project tasks."
 (map! "C-M-<prior>" 'outline-show-entry)
 (map! "C-M-<next>" 'outline-hide-entry)
 (map! "C-M-S-<next>" 'outline-show-all)
+
+
+(setq jiralib-url "https://trusc.atlassian.net")
+(setq org-jira-custom-jqls
+      '(
+        (:jql "project IN ('SALS', 'Sales App') ORDER BY created DESC"
+         :filename "salesapp-board")
+        ))

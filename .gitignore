@@ -12,12 +12,19 @@
 
 .envrc
 tasks.sh
+tasks
 __snapshots__
 docker-compose.local.yml
 mysail
 .env.testing
+.php-cs-fixer.cache
+.phpunit.result.cache
+.debug
+
+
 ### wwwhhaaatt? 
 ._* 
+
 
 ### mine 
 
@@ -50,6 +57,9 @@ tmp/
 local.properties
 .settings/
 .loadpath
+
+# secrets
+.authinfo
 
 # External tool builders
 .externalToolBuilders/
@@ -182,4 +192,4 @@ tmtags
 
 ziggy.js
 telescope
-
+twill-manifest.json

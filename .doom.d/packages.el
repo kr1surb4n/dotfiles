@@ -24,6 +24,7 @@
 	  :recipe (:host github :repo "magit/git-modes"
 			 :files ("gitignore-mode.el")))
 
+(package! org-jira)
 (package! deft)
 (package! lsp-treemacs)
 (package! dumb-jump)

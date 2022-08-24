@@ -14,7 +14,7 @@
  '(jdee-db-requested-breakpoint-face-colors (cons "#0d1011" "#b8bb26"))
  '(jdee-db-spec-breakpoint-face-colors (cons "#0d1011" "#928374"))
  '(objed-cursor-color "#fb4934")
- '(package-selected-packages '(doom-themes importmagic yafolding))
+ '(package-selected-packages '(org-jira doom-themes importmagic yafolding))
  '(pdf-view-midnight-colors (cons "#ebdbb2" "#282828"))
  '(rustic-ansi-faces
    ["#282828" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#cc241d" "#8ec07c" "#ebdbb2"])
