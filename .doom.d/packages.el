@@ -41,6 +41,18 @@
 (package! cmake-ide)
 (package! company-lsp)
 
+(package! cider)
+(package! paredit)
+(package! clojure-mode)
+(package! clojure-mode-extra-font-locking)
+(package! rainbow-delimiters)
+(package! exec-path-from-shell)
+(package! saveplace)
+(package! smex)
+
+(package! tagedit)
+
+
 ;;(package! rtags)
 ;;(package! ivy-rtags)
 
