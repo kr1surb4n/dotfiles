@@ -65,6 +65,6 @@
 (load! "etc/setup-js.el")
 
 (load! "etc/local.el)
-(load! "etc/local.keys.el)
+;; (load! "etc/local.keys.el)
 
 (load! "etc/keys.el")
