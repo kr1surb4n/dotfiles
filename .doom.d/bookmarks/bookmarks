@@ -1,0 +1,39 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8 -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(#1=(#("*Bookmark List*" 0 15
+      (bmkp-full-record #1#))
+    (buffer-name . "*Bookmark List*")
+    (visits . 1)
+    (time 25368 28867 421503 563000)
+    (created 25368 28856 59053 529000)
+    (position . 75)
+    (filename . "   - no file -")
+    (bookmark-list
+     (last-sort-comparer
+      (bmkp-info-node-name-cp bmkp-url-cp bmkp-gnus-cp bmkp-local-file-type-cp bmkp-handler-cp)
+      bmkp-alpha-p)
+     (last-reverse-sort-p)
+     (last-reverse-multi-sort-p)
+     (last-bmenu-filter-function)
+     (last-bmenu-filter-pattern . #2="")
+     (last-bmenu-omitted-bookmarks)
+     (last-bmenu-title . #2#)
+     (last-bmenu-toggle-filenames . t))
+    (handler . bmkp-jump-bookmark-list))
+#1=(#("main_worklog.org" 0 16
+      (bmkp-full-record #1#))
+    (annotation)
+    (tags)
+    (filename . "~/docs/main_worklog.org")
+    (buffer-name . "main_worklog.org")
+    (front-context-string . "e\n\n**** saving a")
+    (rear-context-string . "le and create on")
+    (front-context-region-string)
+    (rear-context-region-string)
+    (visits . 2)
+    (time 25368 28863 457700 583000)
+    (created 25368 28803 475900 800000)
+    (position . 77135))
+)

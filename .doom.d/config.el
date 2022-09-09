@@ -27,18 +27,25 @@
 
 ;;; Paths
 (add-to-list 'load-path "~/bin/lisp")
+(add-to-list 'load-path "~/bin/lisp/bookmark-plus")
 
 ;;; Requires
 (require 'org-id)
 (require 'company-lsp)
 (require 'exec-path-from-shell)
-
+(require 'bookmark+)
 
 ;;; Hard settings
 
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq package-check-signature nil)
+
+
+;;; bookmark+
+
+(setq bookmark-default-file "~/.doom.d/bookmarks/bookmarks_list")
+(setq bookmark-version-control t)
 
 
 ;;;; make sure the env vars are the same as in the shell

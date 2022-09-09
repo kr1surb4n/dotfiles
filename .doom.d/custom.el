@@ -5,6 +5,8 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#32302f" "#fb4934" "#b8bb26" "#fabd2f" "#83a598" "#cc241d" "#8ec07c" "#ebdbb2"])
+ '(bmkp-last-as-first-bookmark-file "~/.doom.d/bookmarks/bookmarks")
+ '(coffee-tab-width 2)
  '(custom-safe-themes
    '("1f1b545575c81b967879a5dddc878783e6ebcca764e4916a270f9474215289e5" "bb01aface6e6bdf16e205b2c9396bcd57765a3f114a2a05a800738d501afc89f" "f3a5617990d75bef2a59a249d32aed5e25ce105f70b80d463599caa8e7b758c4" "bd56db04197883901a8c810a45721a8c5cac5909c55116cab08e54725e174f9a" "f7216d3573e1bd2a2b47a2331f368b45e7b5182ddbe396d02b964b1ea5c5dc27" "ef1603aa65d6785c5d8950e01fbbf2c367d0f824c49d501c226cce54361fd957" "81ef0b247714a54320f0939333318bfc955706d63a774cb50f8d421a0a244edc" "8d7684de9abb5a770fbfd72a14506d6b4add9a7d30942c6285f020d41d76e0fa" default))
  '(exwm-floating-border-color "#504945")
