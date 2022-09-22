@@ -51,7 +51,7 @@
 (package! smex)
 
 (package! tagedit)
-
+(package! bookmark+)
 
 ;;(package! rtags)
 ;;(package! ivy-rtags)
