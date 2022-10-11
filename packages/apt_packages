@@ -376,3 +376,5 @@ xclip
 xdotool
 youtube-dl
 zeal
+entr
+inotify-tools

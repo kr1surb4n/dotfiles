@@ -52,6 +52,7 @@
 
 (package! tagedit)
 (package! bookmark+)
+(package! ob-rust)
 
 ;;(package! rtags)
 ;;(package! ivy-rtags)
