@@ -53,7 +53,7 @@
 (package! tagedit)
 (package! bookmark+)
 (package! ob-rust)
-
+(package! ox-jekyll-md)
 ;;(package! rtags)
 ;;(package! ivy-rtags)
 
