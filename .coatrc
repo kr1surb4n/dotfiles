@@ -6,7 +6,7 @@
 # trap echo DEBUG
 # export PROMPT_COMMAND=echo
 
-
+source ~/.env # some things are left hidden
 
 export PATH_TO_COAT=~/.coat
 export COAT_MODULES=$PATH_TO_COAT/modules
