@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # make important folders
-mkdir ~/archive ~/docs ~/workshops ~/library ~/temp ~/Portal ~/sync
+mkdir ~/archive ~/configs ~/docs ~/workshops ~/library ~/temp ~/Portal ~/sync
 mkdir -p ~/.config/composer ~/.config/bash-completion ~/.local/share/fonts
 mkdir ~/.fonts
 
@@ -28,6 +28,7 @@ ln -s $(pwd)/autocomplete/pip.completion.bash ~/.config/bash-completion/pip.comp
 ln -s $(pwd)/autocomplete/ssh.completion.bash ~/.config/bash-completion/ssh.completion.bash
 ln -s $(pwd)/autocomplete/system.completion.bash ~/.config/bash-completion/system.completion.bash
 ln -s $(pwd)/autocomplete/tmux.completion.bash ~/.config/bash-completion/tmux.completion.bash
+ln -s $(pwd)/autocomplete/tasks.completion.bash ~/.config/bash-completion/tasks.completion.bash
 ln -s $(pwd)/autocomplete/vagrant.completion.bash ~/.config/bash-completion/vagrant.completion.bash
 ln -s $(pwd)/autocomplete/watson.complete ~/.config/bash-completion/watson.complete
 

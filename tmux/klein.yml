@@ -7,6 +7,6 @@ windows:
     layout: main-vertical
     panes:
     - shell_command: 
-      - gtop
+      - htop
     - cd ~/profiles 
     - cd ~
