@@ -82,4 +82,5 @@ fi
 export MAIL=~/Maildir/
 
 source $HOME/.coatrc
+
 . "$HOME/.cargo/env"

@@ -2,9 +2,9 @@
 
 # make important folders
 mkdir ~/archive ~/configs ~/docs ~/workshops ~/library ~/temp ~/Portal ~/sync
-mkdir -p ~/.config/composer ~/.config/bash-completion ~/.local/share/fonts
-mkdir ~/.fonts
+mkdir -p ~/.config/composer ~/.config/bash-completion ~/.local/share
 
+touch ~/.env
 
 # link folders
 ln -sf $(pwd)/.doom.d $HOME/.doom.d

@@ -1,0 +1,14 @@
+session_name: '1'
+windows:
+- focus: 'true'
+  layout: ebc1,156x19,0,0{74x19,0,0[74x9,0,0,2,74x4,0,10,4,74x4,0,15,7],81x19,75,0[81x9,75,0,3,81x9,75,10,5]}
+  options: {}
+  panes:
+  - bash
+  - bash
+  - focus: 'true'
+    shell_command: python3
+  - bash
+  - bash
+  start_directory: /home/kris/workshops/web/laravel/laravel_dungeons/range/dungeon-react
+  window_name: python3
