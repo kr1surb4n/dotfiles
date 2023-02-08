@@ -1,14 +1,18 @@
-session_name: '1'
+session_name: 'The Dungeons of Laravel'
 windows:
 - focus: 'true'
   layout: ebc1,156x19,0,0{74x19,0,0[74x9,0,0,2,74x4,0,10,4,74x4,0,15,7],81x19,75,0[81x9,75,0,3,81x9,75,10,5]}
   options: {}
   panes:
-  - bash
+  - ./tasks run_instance
+  - shell_command:
+    - sleep 30
+    - ./tasks watch_js_linters
+  - shell_command:
+    - sleep 30
+    - ./tasks watch_php_linters
   - bash
   - focus: 'true'
-    shell_command: python3
-  - bash
-  - bash
+  - shell_command: bash
   start_directory: /home/kris/workshops/web/laravel/laravel_dungeons/range/dungeon-react
-  window_name: python3
+  window_name: The Dungeons of Laravel
