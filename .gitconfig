@@ -104,3 +104,6 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+#[rebase]  # for git 2.6
+#	instructionFormat "[%ai] %s"

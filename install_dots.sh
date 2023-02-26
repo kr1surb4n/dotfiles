@@ -15,6 +15,9 @@ ln -sf $(pwd)/.fonts $HOME/.local/share/fonts
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
+# install space vim
+./install_spacevim.sh
+
 # make symbolic links to dotfiles  -> one source of truth
 find . -maxdepth 1 -type f -name ".*" | while read dotfile; do clean_name="${dotfile/.\//}"; ln -sf $(pwd)/$clean_name $HOME/$clean_name; done
 
