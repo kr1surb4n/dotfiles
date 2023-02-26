@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_github_kris"
-
 # add a new line before command output
 # trap echo DEBUG
 # export PROMPT_COMMAND=echo
@@ -12,9 +10,33 @@ export PATH_TO_COAT=~/.coat
 export COAT_MODULES=$PATH_TO_COAT/modules
 export COAT_STORAGE=$PATH_TO_COAT/storage
 export COAT_PACKAGES=$PATH_TO_COAT/packages
-export COAT_LIBS=$PATH_TO_COAT/libs
+export COAT_LIBS=$PATH_TO_COAT/libssa
 
 export TMUXP_CONFIGDIR=~/.dotfiles/tmux
+
+export SPELLS=~/.coat/storage/spells
+export MAGI_BOOK=$SPELLS/magi_book
+
+export BASH_SPELLS=$SPELLS/bash
+export DIAGNOSTICS_SPELLS=$SPELLS/diagnostics
+export PROGRAMS_SPELLS=$SPELLS/programs
+export NET_SPELLS=$SPELLS/network
+export DOCKER_SPELLS=$SPELLS/docker
+export PGSQL_SPELLS=$SPELLS/postgresql
+export GIT_COMMANDS_FILE=$SPELLS/git_commands
+
+export MAGIC_BOOKS="$MAGI_BOOK \
+                    $BASH_SPELLS \
+                    $DIAGNOSTICS_SPELLS \
+                    $PROGRAMS_SPELLS \
+                    $NET_SPELLS \
+                    $GIT_COMMANDS_FILE \
+                    $DOCKER_SPELLS \
+                    $PGSQL_SPELLS"
+
+export DIRTY_NOTES=~/.coat/storage/dirty_notes
+export TELEPORTS=$PATH_TO_COAT/storage/teleports
+
 
 export SPOT_FILE=$PATH_TO_COAT/storage/spot
 export FOLDER_BOOKMARK_FILE=$PATH_TO_COAT/storage/bookmarks
