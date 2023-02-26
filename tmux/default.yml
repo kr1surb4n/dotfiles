@@ -1,0 +1,37 @@
+session_name: '0'
+windows:
+- layout: 22d2,135x32,0,0{67x32,0,0[67x16,0,0,0,67x15,0,17,2],67x32,68,0,1}
+  options: {}
+  panes:
+  - shell_command:
+    - cd /home/kris/profiles
+    - bash
+  - focus: 'true'
+    shell_command:
+    - cd /home/kris
+    - bash
+  - shell_command:
+    - cd /home/kris
+    - emacs
+  window_name: bash
+- layout: 21e5,135x32,0,0[135x15,0,0,3,135x16,0,16,4]
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /home/kris/.coat
+    - vim
+  - shell_command:
+    - cd /home/kris/.dotfiles
+    - bash
+  window_name: vim
+- focus: 'true'
+  layout: 591b,135x32,0,0[135x16,0,0,17,135x15,0,17{67x15,0,17,18,67x15,68,17,19}]
+  options: {}
+  panes:
+  - find
+  - focus: 'true'
+    shell_command: python3
+  - bash
+  start_directory: /home/kris
+  window_name: bash
