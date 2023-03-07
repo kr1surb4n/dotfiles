@@ -25,6 +25,7 @@ export DOCKER_SPELLS=$SPELLS/docker
 export PGSQL_SPELLS=$SPELLS/postgresql
 export GIT_COMMANDS_FILE=$SPELLS/git_commands
 export AWS_SPELLS=$SPELLS/aws
+export SECRETS_SPELLS=$SPELLS/secrets
 
 export MAGIC_BOOKS="$MAGI_BOOK \
                     $BASH_SPELLS \
@@ -34,6 +35,7 @@ export MAGIC_BOOKS="$MAGI_BOOK \
                     $GIT_COMMANDS_FILE \
                     $DOCKER_SPELLS \
                     $AWS_SPELLS \
+                    $SECRETS_SPELLS \
                     $PGSQL_SPELLS"
 
 export DIRTY_NOTES=~/.coat/storage/dirty_notes
