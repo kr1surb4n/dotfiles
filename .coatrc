@@ -14,7 +14,7 @@ export COAT_LIBS=$PATH_TO_COAT/libssa
 
 export TMUXP_CONFIGDIR=~/.dotfiles/tmux
 
-export SPELLS=~/.coat/storage/spells
+export SPELLS=~/.dotfiles/spells
 export MAGI_BOOK=$SPELLS/magi_book
 
 export BASH_SPELLS=$SPELLS/bash
@@ -24,6 +24,7 @@ export NET_SPELLS=$SPELLS/network
 export DOCKER_SPELLS=$SPELLS/docker
 export PGSQL_SPELLS=$SPELLS/postgresql
 export GIT_COMMANDS_FILE=$SPELLS/git_commands
+export AWS_SPELLS=$SPELLS/aws
 
 export MAGIC_BOOKS="$MAGI_BOOK \
                     $BASH_SPELLS \
@@ -32,6 +33,7 @@ export MAGIC_BOOKS="$MAGI_BOOK \
                     $NET_SPELLS \
                     $GIT_COMMANDS_FILE \
                     $DOCKER_SPELLS \
+                    $AWS_SPELLS \
                     $PGSQL_SPELLS"
 
 export DIRTY_NOTES=~/.coat/storage/dirty_notes
