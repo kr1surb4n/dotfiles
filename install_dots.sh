@@ -26,6 +26,7 @@ ln -s $(pwd)/autocomplete/composer.completion.bash ~/.config/bash-completion/com
 ln -s $(pwd)/autocomplete/docker.completion.bash ~/.config/bash-completion/docker.completion.bash
 ln -s $(pwd)/autocomplete/docker-compose.completion.bash ~/.config/bash-completion/docker-compose.completion.bash
 ln -s $(pwd)/autocomplete/makefile.completion.bash ~/.config/bash-completion/makefile.completion.bash
+ln -s $(pwd)/autocomplete/npm.completion.bash ~/.config/bash-completion/npm.completion.bash
 ln -s $(pwd)/autocomplete/pip3.completion.bash ~/.config/bash-completion/pip3.completion.bash
 ln -s $(pwd)/autocomplete/pip.completion.bash ~/.config/bash-completion/pip.completion.bash
 ln -s $(pwd)/autocomplete/ssh.completion.bash ~/.config/bash-completion/ssh.completion.bash
